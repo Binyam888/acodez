@@ -86,20 +86,21 @@
      
     left: 0;
     top: 0;
-    background-color: blue;
+    background: linear-gradient(to bottom ,#01539D,#0E0656);
     padding-top: 50px;
     padding-bottom: 40px;
     width: 100%;
-    height: 50vh;
+    height: 55%;
     gap: 40px;
     align-items: center;
     justify-content: center;
+    color: #fff;
 
     transform: translateY(-100%);
     transition: transform ease-in 0.3s;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
+    
     position: absolute;
   }
   .nav-list.isActive {
@@ -112,4 +113,5 @@
   .nav-logo img {
     width: 100px;
   }
+  
 }

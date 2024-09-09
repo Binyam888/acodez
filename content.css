@@ -1,0 +1,151 @@
+.content-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  
+}
+
+.card-main-text{
+    color: #01539D;
+    font-weight: 800;
+}
+.card-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media(min-width:1440px){
+    .content-top{
+        gap: 100px;
+        padding-top: 50px;
+    }
+}
+.content-top h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #01539d;
+}
+.contents {
+  /* padding-top: 80px;
+  padding-left: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards {
+  /* background: hsla(39, 100%, 64%, 0.2); */
+
+  height: 130px;
+  width: 280px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  padding-left: 25px;
+  font-family: Nunito Sans;
+}
+.cards.card-1::after {
+  content: url(/assets/green.png);
+
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  border-bottom-left-radius: 20px;
+}
+.cards.card-2::after {
+    content: url(/assets/blue.png);
+  
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 20px;
+  }
+  .cards.card-3::after {
+    content: url(/assets/arrow.png);
+   
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 20px;
+  }
+  .cards.card-4::after {
+    content: url(/assets/pink.png);
+   
+  
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 20px;
+  }
+
+.card-group{
+    
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.content-bottom{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:425px){
+    .content-top{
+        gap: 20px;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:769px) {
+    .content-top img{
+        width: 150px;
+    }
+    .contents{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        
+       
+    }.content-top h1{
+        font-size: 20px;
+        
+    }
+    .content-top{
+        padding-top: 50px;
+        align-items: center;
+        gap: 30px;
+    }
+    .card-group{
+        justify-content: center;
+    }
+    
+}
+
+
+@media(max-width:1025px){
+    .content-top h1{
+        /* font-size: 36px; */
+        
+
+    }
+    .content-top{
+        justify-content: space-around;
+        padding-top: 50px;
+        gap: 50px;
+    
+    }
+    .card-group{
+        justify-content: center;
+    }
+}
