@@ -1,0 +1,47 @@
+
+
+.join-us-heading{
+    color: #01539D;
+}
+
+
+
+/* Mobile Screen */
+@media(max-width:425px){
+    .join-us-heading{
+        color: #01539D;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Tablet */
+@media(min-width:768px){
+.join-us-heading{
+    font-size: 14px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+}
+/* Laptop */
+@media(min-width:1024px){
+    .join-us-heading{
+        font-size: 20px;
+    }
+
+}
+
+
+/* Moniter and Above */
+@media(min-width:1440px){
+    .join-us-heading{
+        font-size: 28px;
+        padding: 95px 330px;
+       
+    }
+
+}
