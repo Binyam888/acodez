@@ -8,13 +8,20 @@
 .join-us-card-content span{
     color: #01539D;
 }
+.join-us-card-content hr{
+    width: 20px;
+    height: 2px;
+    background-color: #33C7CA;
+    border: none;
+    border-radius: 1px;
+}
 
 /* Mobile Screen */
 @media(max-width:425px){
     .join-us-heading{
         color: #01539D;
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
     .join-us-card-content p{
         font-size: 12px;
@@ -28,11 +35,16 @@
     .join-us-card{
         display: flex;
         flex-direction: column;
-        padding: 10px 20px;
-        gap: 20px;
+        padding: 20px 20px;
+        gap: 30px;
         box-shadow: 10px 5px 20px 5px #AFBEDF40;
         margin: 10px;
         border-radius: 20px;
+    }
+    .join-us-cards{
+        display: flex;
+        overflow-x: scroll;
+        padding-bottom: 30px;
     }
 }
 
@@ -94,6 +106,7 @@
     }
     .join-us-card{
         width: 880px;
+        height: 210px;
         
     }
     .join-us-card-content h1{
@@ -102,6 +115,11 @@
     .join-us-card-content p{
         font-size: 16px;
         width: 80%;
+    }
+    .join-us-card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
 }
@@ -126,18 +144,19 @@
     .card2{
         margin-left: 515px;
         margin-top: 50px;
+        margin-bottom: 50px;
         position: relative;
     }
     .card1::after{
         content: url(/assets/left-arrow.png);
         position: absolute;
-        top: 175px;
+        top: 211px;
         left: 100px;
     }
     .card2::after{
         content: url(/assets/right-arrow.png);
         position: absolute;
-        top: 175px;
+        top: 211px;
         right: 100px;
     }
     .card3::after{

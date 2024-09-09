@@ -1,0 +1,110 @@
+.students-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.student-card{
+    
+    min-width:355px;
+    max-width: 335px;
+    height: 311px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 20;
+   
+}
+
+.students-section{
+    background: linear-gradient(to right,#F5F9FD,#64A6DE00);
+    position: relative;
+    /* padding: 30px; */
+    padding: 30px 20px;
+    /* overflow: hidden; */
+  
+   
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.student-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 33px 37px;
+}
+.students-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+    gap: 20px;
+    overflow: scroll;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.student-scroll-section{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.student-scroll-section .buttons img{
+    width: 50px;
+}
+
+
+/* Mobile */
+@media(max-width:425px){
+ .buttons {
+    display: none;
+ }
+
+}
+
+
+/* From Tablet */
+
+@media(min-width:768px){
+
+
+}
+
+/* From laptop */
+@media(min-width:1024px){
+ .buttons{
+    display: flex;
+    z-index: 30;
+    cursor: pointer;
+ }
+ .students-cards{
+    justify-content: center;
+    gap: 35px;
+}
+    
+}
+
+
+/* From Moniter */
+@media(min-width:1440px){
+    .students-section::after{
+        content: url(/assets/student-left-vector.png);
+        position: absolute;
+        left: 0;
+     
+        object-fit: contain;
+        top: 0;
+        width: fit-content;
+    }
+
+    .students-section::before{
+        content: url(/assets/student-right-vector.png);
+        position: absolute;
+        right: 0;
+        
+        bottom: 0;
+    }
+    
+}
