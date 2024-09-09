@@ -2,9 +2,12 @@
 
 .join-us-heading{
     color: #01539D;
+    margin-top: 30px;
 }
 
-
+.join-us-card-content span{
+    color: #01539D;
+}
 
 /* Mobile Screen */
 @media(max-width:425px){
@@ -13,11 +16,62 @@
         font-size: 14px;
         padding: 10px 20px;
     }
+    .join-us-card-content p{
+        font-size: 12px;
+    }
+    .join-us-card-content span{
+        color: #01539D;
+    }
+    .join-us-card-content h1{
+        font-size: 14px;
+    }
+    .join-us-card{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 20px;
+        box-shadow: 10px 5px 20px 5px #AFBEDF40;
+        margin: 10px;
+        border-radius: 20px;
+    }
 }
 
 
 /* Tablet */
 @media(min-width:768px){
+
+    .card2 img{
+        margin-right: 20px;
+    }
+    .card2 p{
+        width: 60%;
+
+    }
+    /* card */
+    .join-us-cards{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .join-us-card-content h1{
+        font-size: 16px;
+    }
+    .join-us-card-content p{
+        font-size: 12px;
+        width: 60%;
+    }
+    .join-us-card{
+        display:  flex;
+        align-items: center;
+        padding: 20px 40px;
+        box-shadow: 10px 5px 20px 5px #AFBEDF40;
+        margin: 10px;
+        border-radius: 20px;
+        width: 700px;
+    }
+    /* Heading */
 .join-us-heading{
     font-size: 14px;
     padding: 10px 20px;
@@ -25,12 +79,29 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 }
 /* Laptop */
 @media(min-width:1024px){
+    .join-us-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .join-us-heading{
         font-size: 20px;
+    }
+    .join-us-card{
+        width: 880px;
+        
+    }
+    .join-us-card-content h1{
+        font-size: 20px;
+    }
+    .join-us-card-content p{
+        font-size: 16px;
+        width: 80%;
     }
 
 }
@@ -40,8 +111,40 @@
 @media(min-width:1440px){
     .join-us-heading{
         font-size: 28px;
-        padding: 95px 330px;
+        padding: 95px 36px;
        
+    }
+    .join-us-cards{
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .card1{
+        margin-left: 10px;
+        position: relative;
+    }
+    .card2{
+        margin-left: 515px;
+        margin-top: 50px;
+        position: relative;
+    }
+    .card1::after{
+        content: url(/assets/left-arrow.png);
+        position: absolute;
+        top: 175px;
+        left: 100px;
+    }
+    .card2::after{
+        content: url(/assets/right-arrow.png);
+        position: absolute;
+        top: 175px;
+        right: 100px;
+    }
+    .card3::after{
+        content: "";
+    }
+    .card2 img{
+        margin-right: 80px;
     }
 
 }
