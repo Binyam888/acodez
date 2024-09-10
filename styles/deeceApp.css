@@ -4,6 +4,11 @@
     background: linear-gradient(to right ,#2D2D2D,#131313);
     padding: 20px 23px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+}
+.store-btn:hover{
+    transform: scale(1.04);
 }
 .dcApp-Button{
     display: flex;
@@ -146,6 +151,7 @@
   .dcApp-left{
     padding-left: 200px;
   }
+  
   
 }
 

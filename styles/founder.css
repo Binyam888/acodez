@@ -16,7 +16,7 @@
     background-color: #01539D;
     z-index: 40;
     
-    position: absolute;
+    
     padding-top: 50px;
 }
 
@@ -78,5 +78,25 @@
         font-weight: 700;
         font-size: 38px;
     }
+    .message-from-founder{
+        position: relative;
+        overflow: hidden;
+
+    }
+    .message-from-founder::after{
+        content: url(/assets/founder-vector-bg.png);
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        
+    }
+    .founder-img img{
+        z-index: 30;
+    }
+    
+}
+@media (max-width:768px) {
+
     
 }
