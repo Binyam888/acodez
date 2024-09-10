@@ -5,6 +5,11 @@
 }
 body{
     font-family: Nunito Sans;
+    
+}
+
+ul li{
+    cursor: pointer;
 }
 ::-webkit-scrollbar{
     display: none;

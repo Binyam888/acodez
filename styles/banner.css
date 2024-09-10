@@ -2,4 +2,139 @@
     background: linear-gradient(to right,#01539D,#0E0656);
     width: 100%;
     height: 50vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+}
+
+.banner-list li{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.banner-list{
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    padding: 20px 20px;
+}
+
+@media (max-width:425px){
+    .banner-list{
+        justify-content: center;
+    }
+    .bannerContents{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .bannerContents h1
+    {
+        font-size: 34px !important;
+        font-weight: 700;
+    }
+    .banner-right{
+        display: none;
+    }
+}
+@media (max-width:769px){
+    .banner-right{
+        display: none;
+    }
+
+}
+
+
+@media(min-width:724px){
+  .baner-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .bannerContents{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start !important;
+    padding-top: 30px;
+    gap: 10px;
+    align-items: center;
+    padding-left: 30px;
+}
+}
+@media(min-width:1024px){
+    .bannerContents{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start !important;
+        padding-top: 30px;
+        gap: 10px;
+        align-items: center;
+    }
+    .bannerContents h1{
+        font-size: 60px;
+    }
+    .bannerContents p{
+        font-size: 20px;
+    }
+    .bannerContents h2{
+        font-size: 35px;
+    }
+    .banerIMage{
+        /* width: 700px; */
+        position :absolute;
+        object-fit: contain;
+        right: 300px;
+        top: 20px;
+        z-index: 30;
+
+    }
+    .banner-list{
+        gap: 50px;
+        width: 70%;
+        justify-content: start;
+        margin-left: -40px;
+    }
+    .demo{
+        width: 200px;
+        height: 90vh;
+        background-color: #E3BD78;
+        transform: rotate(35deg);
+        position: absolute;
+        top: -140px;
+        right: 500px;
+    }
+}
+@media (min-width:1440px){
+    .banerIMage{
+        /* width: 700px; */
+        position :absolute;
+        object-fit: contain;
+        right: 250px;
+        top: 20px;
+        z-index: 30;
+
+    }
+
+}
+@media (max-width:1034px){
+    .demo{
+        display: none;
+    }
+    .banerIMage{
+        /* width: 700px; */
+        position :absolute;
+        object-fit: contain;
+        right: 150px;
+        top: 20px;
+        z-index: 30;
+
+    }
+
 }
