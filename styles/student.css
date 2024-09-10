@@ -106,5 +106,13 @@
         
         bottom: 0;
     }
+    .students-heading h1{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .students-section p{
+        font-weight: 400;
+        font-size: 20px;
+    }
     
 }

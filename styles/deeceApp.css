@@ -1,0 +1,151 @@
+.store-btn{
+    width: 180px;
+    height: 70px;
+    background: linear-gradient(to right ,#2D2D2D,#131313);
+    padding: 20px 23px;
+    border-radius: 10px;
+}
+.dcApp-Button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px 25px;
+}
+.deceApp{
+    min-height: 420px;
+    background: linear-gradient(to right ,#1A94FF,#33C7CA);
+}
+.dcApp-left-content {
+    color: white;
+   
+}
+.dcApp-left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+.smallMobile{
+    border: 5px solid black;
+    width: fit-content;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+
+}
+.smallMobile::before{
+    content: '';
+    background-color: #131313;
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 30%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+.mobiles{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.bigMobile{
+    border: 5px solid black;
+    width: fit-content;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+
+}
+.bigMobile::after{
+    content: '';
+    background-color: #131313;
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    left: 35%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+}
+
+
+/* mobile */
+@media(max-width:425px){
+    .mobiles{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+
+/* from tab */
+@media(min-width:764px){
+
+
+}
+/* from laptop */
+@media(min-width:1024px){
+    .dcApp-left-content {
+        /* display: flex; */
+        align-items: start;
+        
+       
+        
+    }
+
+    .dcApp-left{
+        display: flex;
+        padding-left: 30px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        padding-right: 30px;
+
+    }
+    .dcApp-left-content{
+        width: 80%;
+    }
+
+    .deceApp{
+        display: flex;
+      
+        position: relative;
+    }
+    .bigMobile{
+        position: absolute;
+        top: -60px;
+        right: 100px;
+
+    }
+    .smallMobile{
+        position: absolute;
+        top: 120px;
+        right: 320px;
+        
+    }
+    .deceApp{
+        padding-top: 0;
+    }
+
+}
+/* from moniter */
+@media(min-width:1440px){
+  .dcApp-left-content h1{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .dcApp-left-content p{
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .dcApp-left{
+    padding-left: 200px;
+  }
+  
+}
+
