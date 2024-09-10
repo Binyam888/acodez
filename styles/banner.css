@@ -101,7 +101,7 @@
         justify-content: start;
         margin-left: -40px;
     }
-    .demo{
+    .yelloBar{
         width: 200px;
         height: 90vh;
         background-color: #E3BD78;
@@ -124,7 +124,7 @@
 
 }
 @media (max-width:1034px){
-    .demo{
+    .yelloBar{
         display: none;
     }
     .banerIMage{
