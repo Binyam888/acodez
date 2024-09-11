@@ -73,7 +73,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: start !important;
-        padding-top: 30px;
+        padding-top: 40px;
         gap: 10px;
         align-items: center;
     }
@@ -87,9 +87,9 @@
         font-size: 35px;
     }
     .banerIMage{
-        /* width: 700px; */
+        width : 38vh;
         position :absolute;
-        object-fit: contain;
+        object-fit: cover;
         right: 300px;
         top: 20px;
         z-index: 30;
@@ -107,7 +107,7 @@
         background-color: #E3BD78;
         transform: rotate(35deg);
         position: absolute;
-        top: -140px;
+        top: -160px;
         right: 500px;
     }
 }
